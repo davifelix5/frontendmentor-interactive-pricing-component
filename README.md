@@ -1,7 +1,8 @@
 # Frontend Mentor - Interactive pricing component
 
 ![Objetivo do desafio para Desktop](./design/desktop-design.jpg)
-![Objetivo do desafio para Mobile](./design/mobile-design.jpg)
+
+![Preview do desafio resolvido no navegador Firefox](./design/my-design.png)
 
 ## Welcome! 👋
 
