@@ -1,0 +1,292 @@
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: hsl(225, 20%, 60%);
+    background:hsl(230, 100%, 99%);
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.half-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 100vw;
+    z-index: -100;
+    background:hsl(224, 65%, 95%);
+}
+
+.titles {
+    text-align: center;
+    font-size: 25px;
+}
+
+.titles h1 {
+    font-size: 1em;
+    color: hsl(227, 35%, 25%);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.titles h2 {
+    font-size: 0.6em;
+    color: hsl(225, 20%, 60%)
+}
+
+.titles img {
+    position: absolute;
+    z-index: -10;
+    top: -110%;
+    right: 30%;
+}
+
+main {
+    padding: 40px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 1px 1px 8px 5px rgba(0,0,0,0.33) ;
+}
+
+
+main .border {
+    height: 1px;
+    background: hsl(225, 20%, 60%);
+    width: calc(100% + 80px);
+    transform: translateX(-40px);
+}
+
+main .price-section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main .price-section .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .price-section .price .price-display label {
+    font-size: 30px;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+}
+
+main .price-section .price p {
+    letter-spacing: 2px;
+}
+
+main .price-section .price-container {
+    margin: 30px 30px;
+}
+
+main .price-section .price-container input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background-color: hsl(224, 65%, 95%);;
+    outline: none;
+    transform: translateY(-5px);
+}
+
+main .price-section .price-container input[type=range]::-moz-range-progress {
+    background: hsl(174, 77%, 80%);
+    height: 10px;
+    border-radius: 5px;
+}
+
+main .price-section .price-container input[type=range]::-ms-fill-lower {
+    background: hsl(174, 77%, 80%);
+    height: 10px;
+    border-radius: 5px;
+}
+
+main .price-section .price-container input::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%);
+  border: none;
+  background: hsl(174, 86%, 45%) url("../images/icon-slider.svg") no-repeat center;
+  box-shadow: 0px 7px 34px 2px hsl(174, 86%, 45%);
+  transition: all 0.5s;
+}
+
+main .price-section .price-container input::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+main .price-section .price-container input::-ms-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%);
+  border: none;
+  background: hsl(174, 86%, 45%) url("../images/icon-slider.svg") no-repeat center;
+  box-shadow: 0px 7px 34px 2px hsl(174, 86%, 45%);
+  transition: all 0.5s;
+}
+
+main .price-section .price-container input::-ms-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+main .price-section .price-container input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%) url("../images/icon-slider.svg") no-repeat center;
+  box-shadow: 0px 7px 34px 2px hsl(174, 86%, 45%);
+  transition: all 0.5s;
+}
+
+main .price-section .price-container input::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+main .price-section .price-container input {
+    width: 100%;
+    cursor: pointer;
+}
+
+main .price-section .billing-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+main .price-section .billing-container .selected {
+    color: hsl(174, 86%, 45%);
+}
+
+main .price-section .billing-container .month-billing,
+main .price-section .billing-container .year-billing {
+    display: inline;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+main .price-section .billing-container .month-billing:not(.selected):hover,
+main .price-section .billing-container .year-billing:not(.selected):hover {
+    text-decoration: underline;
+    text-decoration-color:hsl(225, 20%, 60%);
+}
+
+main .price-section .billing-container .month-billing {
+    margin-right: 15px;
+}
+
+main .price-section .billing-container input {
+    display: none;
+}
+
+main .price-section .billing-container label.custom-checkbox {
+    cursor: pointer;
+    
+    transform: translateY(1.5px);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    margin-right: 10px;
+    padding: 10px 5px;
+    
+    border-radius: 20px;
+    
+    width: 50px;
+    height: 25px;
+    
+    background: hsl(223, 50%, 87%);
+    
+    transition: justify-content 100s;
+}
+
+main .price-section .billing-container label.custom-checkbox.active {
+    justify-content: flex-end;
+}
+
+main .price-section .billing-container label.custom-checkbox div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    transform: translateY(-0.5px);
+}
+
+main .price-section .billing-container input {
+    margin-right: 20px;
+}
+
+main .price-section .billing-container .discont-value {
+    font-size: 11px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-left: 8px;
+    background: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+}
+
+main .price-section .billing-container .discont-value::after {
+    content: "25% discount";
+}
+
+main .down-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .down-section .checkboxes-container div img {
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    transform: translateY(1px);
+}
+
+main .down-section .checkboxes-container div + div {
+    margin-top: 12px;
+}
+
+main .down-section .checkboxes-container .info-group {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+main .down-section button {
+    background: hsl(227, 35%, 25%);
+    font-weight: 800;
+    outline: none;
+    border: none;
+    padding: 15px 45px;
+    color:hsl(223, 50%, 87%);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+main .down-section button:hover {
+    opacity: .9;
+}

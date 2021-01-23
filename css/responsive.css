@@ -1,0 +1,103 @@
+@media screen and (max-width: 565px) {
+    body {
+        height: unset;
+        justify-content: space-around;
+    }
+    .titles {
+        font-size: 20px;
+        margin: 60px 0;
+    }
+    .titles img {
+        top: -200%;
+
+    }
+    .attribution {
+        margin: 50px 0;
+    }
+    main {
+        padding: 30px 0;
+        width: 90%;
+    }
+    main .border {
+        height: 1px;
+        background: hsl(225, 20%, 60%);
+        width: calc(100% + 10px);
+        transform: translateX(-5px);
+    }
+    main .price-section .price {
+        flex-direction: column;
+    }
+    main .price-section {
+        position: relative;
+    }
+    main .price-section .price {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    main .price-section .price .price-display label {
+        font-size: 25px;
+    }
+    main .price-section .price-container input[type=range],
+    main .price-section .price-container input[type=range]::-moz-range-progress 
+    {
+        height: 8px;
+    }
+
+    main .price-section .price-container {
+        margin: 0;
+    }
+    main .price-section .price p {
+        margin-bottom: 80px;
+    }
+    main .price-section .price-container {
+        display: flex;
+        position: absolute;
+        top: 35%;
+        align-self: center;
+    }
+
+    main .price-section .price-container {
+        width: 90%;
+    }
+    main .price-section .price p {
+        letter-spacing: 2px;
+    }
+    main .price-section .billing-container {
+        font-size: 0.8em;
+    }
+    main .price-section .billing-container .month-billing {
+        margin: 5px;
+    }
+    main .price-section .billing-container label.custom-checkbox {
+        margin-right: 5px;
+        width: 40px;
+        height: 10px;
+    }
+    main .price-section .billing-container label.custom-checkbox div {
+        width: 10px;
+        height: 10px;
+    }
+    main .price-section .billing-container .discont-value {
+        margin: 3px;
+    }
+    main .price-section .billing-container .discont-value::after {
+        content: "-25%";
+    }
+    main .down-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .down-section .checkboxes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main .price-section .billing-container {
+        font-size: 0.7em;
+        margin: 0;
+    }
+}

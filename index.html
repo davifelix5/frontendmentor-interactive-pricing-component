@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="half-background"></div>
+
+  <div class="titles">
+    <h1>
+      Simple, traffic-based pricing
+      <img src="./images/pattern-circles.svg" alt="Circle pattern">
+    </h1>
+    <h2>
+      Sign-up for our 30-day trial. No credit card required. 
+    </h2>
+  </div>
+
+  <main>
+    <section class="price-section">
+      <div class="price">
+        <p>
+          <span class="page-views">100K</span> PAGEVIEWS
+        </p>
+        <div class="price-display">
+          <label for="price-input">
+            $<span class="value">16.00</span>
+          </label>
+          <span>/month</span>
+        </div>
+      </div>
+      <div class="price-container">
+          <input id="price-input" type="range" class="price-input" min="0" max="16" step="4" value="8">
+      </div>
+      <div class="billing-container">
+        <div class="month-billing selected">Monthly Billing</div>
+        <input type="checkbox" name="billing" id="billing">
+        <label for="billing" class="custom-checkbox">
+          <div class="marker"></div>
+        </label>
+        <div class="discount">
+          <div class="year-billing">Yearly Billing </div>
+          <span class="discont-value" id="discount-value"></span>
+        </div>
+      </div>
+    </section>
+    <div class="border"></div>
+    <section class="down-section">
+      <div class="checkboxes-container">
+        <div class="info-group">
+          <img src="./images/icon-check.svg" alt="Check icon">
+          <p>Unlimited websites</p>
+        </div>
+        <div class="info-group">
+          <img src="./images/icon-check.svg" alt="Check icon">
+          <p>100% data ownership</p>
+        </div>
+        <div class="info-group">
+          <img src="./images/icon-check.svg" alt="Check icon">
+          <p>Email reports</p>
+        </div>
+      </div>
+      <button class="main-button">
+        Start my trial
+      </button>
+    </section>
+  </main>
+
+  
+  <div class="attribution" >
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://github.com/davifelix5">Davi Félix</a>.
+  </div>
+  
+  <script src="js/index.js"></script>
+
+</body>
+</html>
