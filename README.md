@@ -3,9 +3,6 @@
 ![Objetivo do desafio para Desktop](./design/desktop-design.jpg)
 ![Objetivo do desafio para Mobile](./design/mobile-design.jpg)
 
-![Preview do desafio resolvido no navegador Firefox](./design/my-design.png)
-![Preview do desafio resolvido em telas menores](./design/my-responsive-design.png)
-
 ## Welcome! 👋
 
 Resolução de desafio do site [Frontend Mentor](https://www.frontendmentor.io) com o objeto de melhorar
