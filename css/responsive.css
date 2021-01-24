@@ -73,10 +73,13 @@
         width: 40px;
         height: 10px;
     }
-    main .price-section .billing-container label.custom-checkbox div {
-        width: 10px;
-        height: 10px;
+    main .price-section .billing-container label.custom-checkbox::after {
+        width: 15px;
+        height: 15px;
     }
+    main .price-section .billing-container input:checked + label.custom-checkbox::after {
+        transform: translateX(20px);
+    } 
     main .price-section .billing-container .discont-value {
         margin: 3px;
     }
