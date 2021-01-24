@@ -20,6 +20,8 @@ const [monthTxt, yearTxt] = texts
 const setDisplayValues = (inputValue) => {
     const hasDiscount = yearTxt.classList.contains('selected')
     const valueIndex = inputValue / 4
+    const gradientProgress = 25 * valueIndex
+    inputRange.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${gradientProgress}%, hsl(224, 65%, 95%) 0%, hsl(224, 65%, 95%) 100%)`
     const [pageViews, [priceNormal, priceDiscount]] = values[valueIndex]
     priceDisplay.innerHTML = `${hasDiscount ? priceDiscount : priceNormal}.00`
     pageViewsDisplay.innerHTML = pageViews
